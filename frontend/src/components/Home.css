@@ -1,0 +1,161 @@
+body, html{
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.bg {
+  background-image: url(../images/lofi-bg.jpg);
+  padding: 0;
+  margin: 0;
+  background-size: 100% 100%;
+  width: 100%;
+  height: 500px;
+
+}
+.topLogo{
+  text-align: left;
+  background-color: #000000;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  
+  
+}
+.logo{
+  width: 25%;
+  height: 25%;
+
+}
+h1, h2, p, ul, li {
+  font-family: monospace;
+}
+ul.header li {
+  display: inline;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+ul.header {
+  background-color: #000000;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  text-align: center; 
+}
+ul.header li a {
+  color: #FFF;
+  font-weight: lighter;
+  text-decoration: none;
+  padding: 20px;
+  display: inline-block;
+}
+.content { 
+  background-color: #0000009F;
+  padding: 20px;
+  width:50%;
+  position: relative;
+  display: grid;
+  grid-template-areas: 
+  'profileArea profileArea profileArea titleArea titleArea titleArea'
+  'profileArea profileArea profileArea titleArea titleArea titleArea'
+  'profileArea profileArea profileArea titleArea titleArea titleArea'
+  'profileArea profileArea profileArea welcomeArea welcomeArea welcomeArea'
+  'profileArea profileArea profileArea welcomeArea welcomeArea welcomeArea'
+  'profileArea profileArea profileArea Introduction Introduction Introduction';
+  grid-gap: 5px;
+
+}
+.content h2 {
+  padding: 0;
+  margin: 0;
+  color: white;
+  font-family: monospace;
+  font-weight: bold;
+  height: 30px;
+  grid-area: titleArea; 
+}
+
+.content h3 {
+  padding: 0;
+  margin: 0;
+  color: white;
+  font-family: monospace;
+  font-weight: lighter; 
+  grid-area: welcomeArea;
+}
+
+.Introduction {
+  grid-area: Introduction;
+}
+
+.profile{
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  filter: brightness(150%);
+  grid-area: profileArea;
+
+ }
+
+ .active{
+  background-color: #9960a5;
+ }
+
+.skillPattern {
+  padding: 20px;
+  grid-area: skillPattern;
+   width: 150px;
+  height: 100px;
+}
+.portrait{
+  width: 45%;
+  height: 100%;
+  grid-area: secondProfile;
+
+ }
+
+
+ .skillContainer { 
+  padding: 20px;
+  margin : 0;
+  background-color: red;
+  width:75%;
+  height: 75%;
+  position: relative;
+  display: grid;
+  grid-template-areas: 
+  'secondProfile secondProfile  name name name name name'
+  'secondProfile secondProfile skillPattern skillPattern skillPattern skillPattern skillPattern '
+  'secondProfile secondProfile skillPattern skillPattern skillPattern skillPattern skillPattern'
+  'secondProfile secondProfile skillPattern skillPattern skillPattern skillPattern skillPattern'
+  'secondProfile secondProfile skillPattern skillPattern skillPattern skillPattern skillPattern' 
+  ; 
+  grid-gap: 5px;
+}
+
+.skills{
+  background-color: black;
+  width: 100%;
+  height: 700px;
+  padding: 0;
+  margin : 0;
+}
+
+.skillContainer h2 {
+  padding: 0;
+  margin: 0;
+  color: white;
+  font-family: monospace;
+  font-weight: bold;
+  grid-area: name; 
+}
+.skillContainer h3 {
+  padding: 0;
+  margin: 0;
+  color: white;
+  font-family: monospace;
+  font-weight: bold;
+  grid-area: skillPattern; 
+}

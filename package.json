@@ -1,0 +1,15 @@
+{
+  "name": "web-proyect-2",
+  "version": "1.0.0",
+  "description": "Final Personal-Portfolio Web Proyect",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Web",
+    "Development"
+  ],
+  "author": "Olivverde",
+  "license": "ISC"
+}
