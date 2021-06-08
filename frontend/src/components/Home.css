@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Ubuntu'), url(http://example.com/fonts/ubuntu.woff) format('woff');
+}
+
 body, html{
   padding: 0;
   margin: 0;
@@ -12,6 +19,7 @@ body, html{
   background-size: 100% 100%;
   width: 100%;
   height: 500px;
+  filter: brightness(85%);
 
 }
 .topLogo{
@@ -20,7 +28,6 @@ body, html{
   padding: 0;
   margin: 0;
   width: 100%;
-  
   
 }
 .logo{
@@ -54,7 +61,7 @@ ul.header li a {
 .content { 
   background-color: #0000009F;
   padding: 20px;
-  width:50%;
+  width:55%;
   position: relative;
   display: grid;
   grid-template-areas: 
@@ -71,7 +78,7 @@ ul.header li a {
   padding: 0;
   margin: 0;
   color: white;
-  font-family: monospace;
+  font-family: Ubuntu, "times new roman", times, roman, serif;
   font-weight: bold;
   height: 30px;
   grid-area: titleArea; 
@@ -94,7 +101,7 @@ ul.header li a {
   border-radius: 50%;
   width: 100%;
   height: 100%;
-  filter: brightness(150%);
+  filter: brightness(200%);
   grid-area: profileArea;
 
  }
@@ -116,46 +123,170 @@ ul.header li a {
 
  }
 
-
- .skillContainer { 
-  padding: 20px;
-  margin : 0;
-  background-color: red;
-  width:75%;
-  height: 75%;
-  position: relative;
-  display: grid;
-  grid-template-areas: 
-  'secondProfile secondProfile  name name name name name'
-  'secondProfile secondProfile skillPattern skillPattern skillPattern skillPattern skillPattern '
-  'secondProfile secondProfile skillPattern skillPattern skillPattern skillPattern skillPattern'
-  'secondProfile secondProfile skillPattern skillPattern skillPattern skillPattern skillPattern'
-  'secondProfile secondProfile skillPattern skillPattern skillPattern skillPattern skillPattern' 
-  ; 
-  grid-gap: 5px;
-}
-
 .skills{
   background-color: black;
   width: 100%;
-  height: 700px;
-  padding: 0;
-  margin : 0;
+  height: 900px;
+  padding: 0px;
+  margin : 0px;
 }
 
-.skillContainer h2 {
+.skills h1{
   padding: 0;
   margin: 0;
   color: white;
-  font-family: monospace;
+  font-family: Ubuntu, "times new roman", times, roman, serif;
   font-weight: bold;
-  grid-area: name; 
+  height: 30px;
+  
 }
-.skillContainer h3 {
+.skills h2{
+  padding: 0;
+  margin: 0;
+  color: white;
+  font-family: Ubuntu, "times new roman", times, roman, serif;
+  font-weight: bold;
+  height: 30px;
+}
+.skills h4{
   padding: 0;
   margin: 0;
   color: white;
   font-family: monospace;
   font-weight: bold;
-  grid-area: skillPattern; 
+  height: 30px;
+}
+
+.who{
+  padding: 0;
+  margin: 0;
+  width: 35%;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(5, 5vw);
+    grid-gap: 15px;
+}
+
+/* Create two equal columns that sits next to each other */
+.galleryImage {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block; 
+}
+
+.Image1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 6;
+
+}
+.Image2 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 6;
+}
+.Image3 {
+    grid-column-start: 5;
+    grid-column-end: 7;
+    grid-row-start: 1;
+    grid-row-end: 6;
+}
+.Image4 {
+    grid-column-start: 7;
+    grid-column-end: 9;
+    grid-row-start: 1;
+    grid-row-end: 6;
+    filter: brightness(85%);
+}
+
+.socialMedia {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-gap: 15px;
+}
+
+.network1 {
+    grid-column-start: 4;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 1;
+
+}
+.network2 {
+    grid-column-start: 5;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 1;
+
+}
+.network3 {
+    grid-column-start: 6;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 1;
+
+}
+.network4 {
+    grid-column-start: 7;
+    grid-column-end: 7;
+    grid-row-start: 1;
+    grid-row-end: 1;
+
+}
+
+.work {
+  background-image: url(../images/aesthetic-bg.jpg);
+  padding: 0;
+  margin: 0;
+  background-size: 100% 100%;
+  width: 100%;
+  height:700px;
+  filter: brightness(85%);
+
+}
+
+.portfolio {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-gap: 15px;
+
+}
+
+.work1 {
+    grid-column-start: 3;
+    grid-column-end: 6;
+    grid-row-start: 0;
+    grid-row-end: 1;
+
+}
+.work2 {
+    grid-column-start: 6;
+    grid-column-end: 9;
+    grid-row-start: 0;
+    grid-row-end: 1;
+
+}
+.work3 {
+    grid-column-start: 3;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 2;
+
+
+}
+.work4 {
+    grid-column-start: 6;
+    grid-column-end: 9;
+    grid-row-start: 1;
+    grid-row-end: 2;
+
 }
