@@ -21,6 +21,20 @@ import basicing from '../images/basic-ing.png';
 import paybc from '../images/whatsapp-paybc.png';
 import egirl from '../images/e-girl.png';
 import histream from '../images/HiStream.png';
+import web from '../images/web-projects.png';
+import lander from "../images/HomePage.png";
+import catflix from "../images/catflix.png";
+import skills from "../images/skills.png";
+import sp from "../images/spanish.png";
+import en from "../images/america.png";
+import pg from "../images/portugues.png";
+import htmlDev from "../images/html.png";
+import cssDev from "../images/css.png";
+import webDev from "../images/web-dev.png";
+import reactDev from "../images/react.png";
+import expressDev from "../images/express-dev.png";
+import eslintDev from "../images/eslint.png";
+import webpackDev from "../images/webpack.png";
 
 const Greetings = () => {
   const currentDate = new Date();
@@ -136,6 +150,92 @@ const Home = () => {
           </figure>
         </div>
       </center>
+    </div>
+    <div className = "web-dev">
+      <center>
+        <br></br><br></br>
+        <img src={ web } className = "who" alt = "web-projects"/>
+        <h2>Lander Project</h2>
+        <br></br>
+        <h3>The Lander Project is a music-streaming platform that holds and implements <br></br>
+        API technology and Database Structure. It develops  within a web environment</h3>
+        <br></br><br></br>
+        <div className ="landerContainer">
+          <figure class = "lander-screen">
+            <img src= {lander} alt="lander-icon"/>
+          </figure>
+          <h2>Implemented<br></br>Technologies</h2>
+          <ul>
+            <li>React</li>
+            <li>Express</li>
+            <li>Eslint</li>
+          </ul>
+        </div>
+        <br></br><br></br>
+        <br></br><br></br>
+        <br></br><br></br>
+        <h2>Catflix Project</h2>
+        <br></br>
+        <h3>The Catflix Project is a copy of an animal protection NGO Chilean video-streaming platform.<br></br>
+        Chilean video-streaming platform. That gets financial resources from copying <br></br> famous streaming shows using animals instead of actors</h3>
+        <br></br><br></br>
+        <div className ="landerContainer">
+          <figure class = "lander-screen">
+            <img src= {catflix} alt="lander-icon"/>
+          </figure>
+          <h2>Implemented<br></br>Technologies</h2>
+          <ul>
+            <li>React</li>
+            <li>Babel</li>
+            <li>Webpack</li>
+          </ul>
+        </div>
+        <br></br><br></br><br></br><br></br>
+        <a href="https://github.com/Olivverde19270">
+        <h2>Find more Projects HERE ⬇️</h2>
+        </a>
+      </center>
+    </div>
+    <div className = "realSkill">
+      <center>
+        <br></br><br></br>
+        <img src= {skills} className = "who" alt="skills-icon"/>
+        <br></br><br></br><br></br><br></br>
+        <div className = "languages">
+          <figure className = "socialItem language1">
+            <img src={ sp } className = "galleryImage" alt = "Facebook"/>
+          </figure>
+          <figure className = "socialItem language2">
+            <img src={ en } className = "galleryImage" alt = "Instagram"/>
+          </figure>
+          <figure className = "socialItem language3">
+            <img src={ pg } className = "galleryImage" alt = "LinkedIn"/>
+          </figure>
+        </div>
+        <div className  = "checken">
+          <figure className = "skillCheck check1">
+            <img src={ htmlDev } className = "galleryImage" alt = "htmlDev"/>
+          </figure>
+          <figure className = "skillCheck check2">
+            <img src={ cssDev  } className = "galleryImage" alt = "cssDev "/>
+          </figure>
+          <figure className = "skillCheck check3">
+            <img src={ webDev  } className = "galleryImage" alt = "webDev "/>
+          </figure>
+          <figure className = "skillCheck check4">
+            <img src={ reactDev } className = "galleryImage" alt = "reactDev"/>
+          </figure>
+          <figure className = "skillCheck check5">
+            <img src={ expressDev } className = "galleryImage" alt = "expressDev"/>
+          </figure>
+          <figure className = "skillCheck check6">
+            <img src={ eslintDev } className = "galleryImage" alt = "eslintDev"/>
+          </figure>
+          <figure className = "skillCheck check7">
+            <img src={ webpackDev } className = "galleryImage" alt = "webpackDev"/>
+          </figure>
+        </div>
+        </center>
     </div>
   </div>
 
