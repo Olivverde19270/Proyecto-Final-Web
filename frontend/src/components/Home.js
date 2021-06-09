@@ -35,6 +35,7 @@ import reactDev from "../images/react.png";
 import expressDev from "../images/express-dev.png";
 import eslintDev from "../images/eslint.png";
 import webpackDev from "../images/webpack.png";
+import contact from "../images/contactMe.png";
 
 const Greetings = () => {
   const currentDate = new Date();
@@ -115,20 +116,6 @@ const Home = () => {
         <h4>"He is an icon, he is a legend and he is the moment..."</h4>
         <br></br><br></br>
         <h2>He also is a UVG Student, an Artist, a Programmer, but most importantly a HUMAN</h2>
-        <div className = "socialMedia">
-          <figure className = "socialItem network1">
-            <img src={ fb } className = "galleryImage" alt = "Facebook"/>
-          </figure>
-          <figure className = "socialItem network2">
-            <img src={ ig } className = "galleryImage" alt = "Instagram"/>
-          </figure>
-          <figure className = "socialItem network3">
-            <img src={ link } className = "galleryImage" alt = "LinkedIn"/>
-          </figure>
-          <figure className = "socialItem network4">
-            <img src={ git } className = "galleryImage" alt = "Github"/>
-          </figure>
-        </div>
       </center>   
     </div>
     <div className = "work">
@@ -236,6 +223,34 @@ const Home = () => {
           </figure>
         </div>
         </center>
+        <div className = "contact">
+            <center>
+                <br></br><br></br>
+                <img src= {contact  } className = "who" alt="contact-icon"/>
+                <div className = "socialMedia">
+                  <figure className = "socialItem network1">
+                    <a href="https://www.facebook.com/people/Oliver-Milian/100008653547975/">
+                      <img src={ fb } className = "galleryImage" alt = "Facebook"/>
+                    </a>
+                  </figure>
+                  <figure className = "socialItem network2">
+                    <a href="https://www.instagram.com/olivverde/?hl=es-la">
+                      <img src={ ig } className = "galleryImage" alt = "Instagram"/>
+                    </a>
+                  </figure>
+                  <figure className = "socialItem network3">
+                    <a href="https://www.linkedin.com/in/olivverde/">
+                      <img src={ link } className = "galleryImage" alt = "LinkedIn"/>
+                    </a>
+                  </figure>
+                  <figure className = "socialItem network4">
+                    <a href="https://www.linkedin.com/in/olivverde/">
+                      <img src={ git } className = "galleryImage" alt = "Github"/>
+                    </a>
+                  </figure>
+                </div>
+            </center>
+        </div>
     </div>
   </div>
 

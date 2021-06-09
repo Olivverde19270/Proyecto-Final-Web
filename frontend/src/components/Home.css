@@ -437,3 +437,10 @@ ul.header li a {
     grid-row-start: 4;
     grid-row-end: 6;
 }
+.contact{
+  background-color: black;
+  width: 100%;
+  height: 300px;
+  padding: 0px;
+  margin : 0px;
+}
